@@ -5,23 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="font-font-roboto">
-    <header>
-        <nav>
-            <div>
-                <p>Counselor</p>
+    <!-- Header-1 -->
+    <header class="bg-color-primary py-2 md:py-3 lg:py-5">
+        <div class="container flex flex-col md:flex-row justify-between gap-5 md:gap-0 items-start md:items-center text-white">
+            <div class="flex justify-center gap-4 items-center">
+                <div class="flex gap-2 justify-center items-center">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+00 1234 567</p>
+                </div>
+                <div class="flex gap-2 justify-center items-center">
+                    <i class="fa fa-paper-plane"></i>
+                    <p>youremail@email.com</p>
+                </div>
             </div>
+
             <div>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Counselor</a>
-                <a href="#">Services</a>
-                <a href="#">Pricing</a>
-                <a href="#">Blog</a>
-                <a href="#">Contact</a>
+                <div class="flex justify-center items-center gap-4">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-dribbble"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header-2 -->
+    <header class="lg:bg-white text-white lg:text-black md:bg-black bg-black py-5">
+        <nav class="container flex  justify-between items-center">
+            <div class="logo flex justify-center items-center">
+               <p class="text-2xl font-semibold">Counselor</p>
+            </div>
+            <ul class="hidden lg:flex space-x-6 gap-5 text-base">
+                <li><a href="#" class="text-color-primary duration-200 font-semibold hover:text-black">Home</a></li>
+                <li><a href="#" class="text-black hover:text-color-primary font-semibold duration-200">About</a></li>
+                <li><a href="#" class="text-black hover:text-color-primary font-semibold duration-300">Counselor</a></li>
+                <li><a href="#" class="text-black hover:text-color-primary font-semibold duration-300">Services</a></li>
+                <li><a href="#" class="text-black hover:text-color-primary font-semibold duration-300">Pricing</a></li>
+                <li><a href="#" class="text-black hover:text-color-primary font-semibold duration-300">Blog</a></li>
+                <li><a href="#" class="text-black hover:text-color-primary font-semibold duration-300">Contact</a></li>
+            </ul>
+            <div class="lg:hidden">
+                <div id="menu-btn" class="">
+                    <p class="text-[#7c7c7c] tracking-wider text-lg">MENU</p>
+                </div>
             </div>
         </nav>
+        
+        <!-- Menu Bar -->
+        <div id="mobile-menu" class="hidden lg:hidden absolute top-10% left-0 w-full h-80 z-50
+         bg-black flex flex-col duration-300 pl-10 md:pl-24 cursor-pointer space-y-5">
+           <a href="#" class="text-color-primary duration-200 font-semibold hover:text-white">Home</a>
+           <a href="#" class="text-white hover:text-color-primary font-semibold duration-200">About</a>
+           <a href="#" class="text-white hover:text-color-primary font-semibold duration-200">Counselor</a>
+           <a href="#" class="text-white hover:text-color-primary font-semibold duration-200">Services</a>
+           <a href="#" class="text-white hover:text-color-primary font-semibold duration-200">Pricing</a>
+           <a href="#" class="text-white hover:text-color-primary font-semibold duration-200">Blog</a>
+           <a href="#" class="text-white hover:text-color-primary font-semibold duration-200">Contact</a>
+        </div>
     </header>
+
+    <!-- Mobile Menu --> 
+    
+
+    <script>
+        let menuBtn = document.getElementById('menu-btn');
+        let mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
