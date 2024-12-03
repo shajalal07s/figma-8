@@ -27,7 +27,7 @@ You need to have the following installed on your machine:
 ### Installation
 1. Clone the repository:
    ```bash
-   https://github.com/shajalal07s/figma-05.git
+   https://github.com/shajalal07s/figma-8.git
 
 ## Deploy
    
