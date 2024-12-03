@@ -4,3 +4,35 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* .text {
+    animation: moveup 0.5s linear forwards;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes moveup {
+    0% {
+        margin-bottom: 30px;
+        opacity: 0;
+    }
+
+    50% {
+        margin-bottom: 15px;
+        opacity: 0.1;
+    }
+
+    100% {
+        margin-bottom: 0px;
+        opacity: 1;
+    }
+};
+
+@keyframes moveup {
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+} */

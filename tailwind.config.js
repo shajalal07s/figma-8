@@ -3,6 +3,16 @@ module.exports = {
   content: ["./*.{html,js}"],
   theme: {
     extend: {
+      animation: {
+        'movedown': 'movedown 3s infinite',
+      },
+      keyframes: {
+        movedown : {
+          '0%, 100%': { transform: 'scale(2)', opacity: '0.5' },
+          '50%': { transform: 'scale(1.1)', opacity: '0.1' },
+        },
+      },
+      
       colors: {
         'color-primary': '#589167',
         'color-text': '#b2b2b2',
